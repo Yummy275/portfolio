@@ -24,7 +24,6 @@ const Container = styled.div`
     }
 
     div.info-content {
-        padding: 1rem;
     }
 `;
 
