@@ -1,11 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { colors } from '../util/colors';
 import { Circle } from './Circle';
 import { ContactLink } from './ContactLink';
+import { ScrollingWaves } from './ScrollingWaves';
 import linkedin from '../images/linkedin.png';
 import email from '../images/email.png';
-import hillsBg from '../images/hills.svg';
 import blurryGrad from '../images/blurryGradient.svg';
 
 const Container = styled.div`
@@ -13,29 +13,49 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-image: url(${hillsBg});
-    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
 
     div.content {
         display: flex;
-        align-items: center;
+        height: fit-content;
 
         div.greeting-info {
-            margin-left: -8rem;
+            display: flex;
+            align-items: center;
             padding: 2rem;
+            height: fit-content;
+            margin-left: 10rem;
 
             div.greeting-text {
-                border-radius: 10px;
                 padding: 1rem;
-                background-color: ${colors.black};
                 font-size: 2rem;
+                margin-left: 0.5rem;
+            }
+
+            div.contact-links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
             }
         }
     }
 `;
 
+const Blob = keyframes`
+    0% { border-radius: 50%}
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+
+`;
+
 const GreetingCircle = styled(Circle)`
+    animation: ${Blob} 10s ease infinite alternate;
+
     :hover {
         background-image: url(${blurryGrad});
         background-size: cover;
@@ -48,14 +68,10 @@ const GreetingCircle = styled(Circle)`
 const Greeting = () => {
     return (
         <Container>
+            <ScrollingWaves />
             <div className="content">
                 <GreetingCircle size="30rem" />
                 <div className="greeting-info">
-                    <div className="greeting-text">
-                        <h1>Hello.</h1>
-                        <h1>I'm Humberto Gonzalez.</h1>
-                        <h1>Web Developer.</h1>
-                    </div>
                     <div className="contact-links">
                         <ContactLink
                             target="mailto:htgonzalez27@gmail.com"
@@ -65,6 +81,11 @@ const Greeting = () => {
                             icon={linkedin}
                             target="https://www.linkedin.com/in/humberto-gonzalez275/"
                         />
+                    </div>
+                    <div className="greeting-text">
+                        <h1>Hello.</h1>
+                        <h1>I'm Humberto Gonzalez.</h1>
+                        <h1>Web Developer.</h1>
                     </div>
                 </div>
             </div>

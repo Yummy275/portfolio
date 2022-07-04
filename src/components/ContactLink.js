@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const ContactLinkImg = styled.img`
     width: 4.5rem;
     height: 4.5rem;
-    margin: 0.5rem;
 `;
 
 export const ContactLink = ({ target, icon }) => {
