@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { colors } from '../util/colors';
+import { breakpoints } from '../util/breakpoints';
 
 export const Circle = styled.div`
     width: ${(props) => props.size};
@@ -7,6 +8,19 @@ export const Circle = styled.div`
     border-radius: 50%;
     border: 6px solid ${colors.lightBlue};
     transition: all 0.3s ease-out;
+
+    @media (min-width: ${breakpoints.md}) {
+        width: ${(props) => props.sizemd};
+        height: ${(props) => props.sizemd};
+    }
+    @media (min-width: ${breakpoints.lg}) {
+        width: ${(props) => props.sizelg};
+        height: ${(props) => props.sizelg};
+    }
+    @media (min-width: ${breakpoints.xl}) {
+        width: ${(props) => props.sizexl};
+        height: ${(props) => props.sizexl};
+    }
 `;
 
 const MorphingBlob = keyframes`

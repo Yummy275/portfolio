@@ -3,6 +3,7 @@ import { GlobalStyles } from './components/GlobalStyles';
 import Greeting from './components/Greeting';
 import AboutMe from './components/AboutMe';
 import { MorphingCircle, InvertBgCircle } from './components/Circle';
+import { breakpoints } from './util/breakpoints';
 
 const Container = styled.div`
     position: relative;
@@ -16,7 +17,11 @@ const Container = styled.div`
         & > div {
             position: fixed;
             margin-top: 40rem;
-            margin-right: -70vw;
+            margin-right: -10vw;
+
+            @media (min-width: ${breakpoints.md}) {
+                margin-right: -70vw;
+            }
         }
     }
 
@@ -29,8 +34,8 @@ function App() {
         <Container className="App">
             <GlobalStyles />
             <div className="morph-invert-circle">
-                <MorphingCircle size="30rem" />
-                <InvertBgCircle size="20rem" />
+                <MorphingCircle size="18rem" sizemd="26rem" sizelg="34rem" />
+                <InvertBgCircle size="12rem" sizemd="16rem" sizelg="20rem" />
             </div>
             <div className="info-content">
                 <Greeting />

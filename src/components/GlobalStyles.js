@@ -15,8 +15,6 @@ export const GlobalStyles = createGlobalStyle`
   } 
 
   .info-block {
-    padding: 1rem;
-
     @media(min-width: ${breakpoints.md}) {
           margin-left: 20vw;
     }
