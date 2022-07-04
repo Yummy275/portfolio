@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
           margin-left: 20vw;
     }
     @media(min-width: ${breakpoints.xl}) {
-          margin-left: 40vw;
+          margin-left: 35vw;
     }
   }
 `;

@@ -27,9 +27,13 @@ const Container = styled.div`
         border-radius: 10px;
     }
 
+    @media (min-width: ${breakpoints.md}) {
+        flex-direction: row;
+    }
+
     img.bodyshot {
         display: none;
-        @media (min-width: ${breakpoints.lg}) {
+        @media (min-width: ${breakpoints.md}) {
             display: block;
             width: 14rem;
             height: auto;
@@ -39,19 +43,17 @@ const Container = styled.div`
     img.headshot {
         width: 14rem;
         margin: 0 auto;
-        @media (min-width: ${breakpoints.lg}) {
+        @media (min-width: ${breakpoints.md}) {
             display: none;
         }
-    }
-
-    @media (min-width: ${breakpoints.lg}) {
-        flex-direction: row;
     }
 
     .bio-info {
         h1 {
             margin: 2rem 0;
         }
+
+        max-width: 32rem;
 
         .bio-text {
             margin-left: 2rem;
