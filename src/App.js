@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { GlobalStyles } from './components/GlobalStyles';
 import Greeting from './components/Greeting';
 import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
 import { MorphingCircle, InvertBgCircle } from './components/Circle';
 import { breakpoints } from './util/breakpoints';
 
@@ -58,6 +59,7 @@ function App() {
             <div className="info-content">
                 <Greeting />
                 <AboutMe />
+                <Projects />
             </div>
         </Container>
     );
