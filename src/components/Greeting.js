@@ -4,11 +4,11 @@ import { ContactLink } from './ContactLink';
 import linkedin from '../images/linkedin.png';
 import email from '../images/email.png';
 import waveGradient from '../images/wavesGradient.svg';
-import { colors } from '../util/colors';
 
 const Container = styled.div`
-    position: relative;
     height: 100vh;
+    display: flex;
+    align-items: center;
 
     div.greeting-content {
         display: flex;
@@ -17,7 +17,6 @@ const Container = styled.div`
             padding: 1rem;
             font-size: 1.8rem;
             margin-left: 0.5rem;
-            background-color: ${colors.black};
         }
 
         div.contact-links {
@@ -39,7 +38,7 @@ const Container = styled.div`
 const Greeting = () => {
     return (
         <Container>
-            <div className="greeting-content">
+            <div className="greeting-content info-block">
                 <div className="contact-links">
                     <ContactLink
                         target="mailto:htgonzalez27@gmail.com"

@@ -11,6 +11,10 @@ export const GlobalStyles = createGlobalStyle`
   
   html {
     background-color: ${colors.black};
+  } 
+
+  .info-block {
+    margin-left: 40rem;
   }
 
 `;

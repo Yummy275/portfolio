@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ContactLinkImg = styled.img`
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 5rem;
+    height: 5rem;
 `;
 
 export const ContactLink = ({ target, icon }) => {

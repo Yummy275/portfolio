@@ -1,26 +1,62 @@
 import React from 'react';
 import styled from 'styled-components';
+import bodyshot from '../images/longshot.jpg';
+import TechInfo from './TechInfo';
+
+const bio = [
+    "I'm a self taught developer looking to work on web projects. With a passion for elegant design and clean maintainable code, I hope to help push you towards your goals. ",
+    "Whether you're looking for a new website, an update, or looking for your next dedicated web developer; I'm ready to help!",
+];
 
 const Container = styled.div`
-    margin-top: 15rem;
+    margin-top: 10rem;
+
+    p {
+        font-size: 1.7rem;
+    }
+
+    .bodyshot {
+        width: 16rem;
+    }
+
+    .bio {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .bio-info {
+            width: 40rem;
+
+            h1 {
+                margin: 1.5rem 0;
+            }
+
+            .bio-text {
+                margin-left: 2rem;
+
+                & > :first-child {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
 `;
 
 const AboutMe = () => {
     return (
-        <Container>
-            <h1>
-                Aliqua est nisi ea sint laboris reprehenderit sint aliquip
-                consectetur.
-            </h1>
-            <p>
-                In magna enim esse cillum voluptate sint incididunt anim sunt
-                cillum. Elit exercitation anim laboris incididunt sunt. Deserunt
-                eiusmod sint cillum aliqua commodo officia qui ad anim do.
-                Incididunt et reprehenderit laboris in voluptate nisi do ipsum
-                dolor enim laborum dolore est incididunt. Dolore consectetur ea
-                minim exercitation aliquip velit incididunt fugiat. Officia ex
-                nulla deserunt amet ullamco.
-            </p>
+        <Container className="info-block">
+            <div className="bio">
+                <div className="bio-info">
+                    <h1>Who am I?</h1>
+                    <div className="bio-text">
+                        <p>{bio[0]}</p>
+                        <p>{bio[1]}</p>
+                    </div>
+                    <h1>Tools</h1>
+                    <TechInfo />
+                </div>
+                <img className="bodyshot" src={bodyshot} alt="me" />
+            </div>
         </Container>
     );
 };

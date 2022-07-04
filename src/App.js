@@ -15,8 +15,8 @@ const Container = styled.div`
         left: 0;
 
         & > div {
-            margin-top: 10rem;
-            margin-left: 25rem;
+            margin-top: 3rem;
+            margin-left: 15rem;
             display: flex;
             justify-content: center;
             align-items: center;
