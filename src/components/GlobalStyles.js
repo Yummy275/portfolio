@@ -12,4 +12,5 @@ export const GlobalStyles = createGlobalStyle`
   html {
     background-color: ${colors.black};
   }
+
 `;

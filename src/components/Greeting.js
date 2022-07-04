@@ -13,7 +13,6 @@ const Container = styled.div`
     div.greeting-content {
         display: flex;
         align-items: center;
-
         div.greeting-text {
             padding: 1rem;
             font-size: 1.8rem;
