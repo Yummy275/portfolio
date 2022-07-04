@@ -23,6 +23,14 @@ const Container = styled.div`
                 margin-right: -70vw;
             }
         }
+
+        .morphing-circle {
+            z-index: -5;
+        }
+
+        .invert-circle {
+            z-index: 5;
+        }
     }
 
     div.info-content {
@@ -34,8 +42,18 @@ function App() {
         <Container className="App">
             <GlobalStyles />
             <div className="morph-invert-circle">
-                <MorphingCircle size="18rem" sizemd="26rem" sizelg="34rem" />
-                <InvertBgCircle size="12rem" sizemd="16rem" sizelg="20rem" />
+                <MorphingCircle
+                    className="morphing-circle"
+                    size="18rem"
+                    sizemd="26rem"
+                    sizelg="34rem"
+                />
+                <InvertBgCircle
+                    className="invert-circle"
+                    size="12rem"
+                    sizemd="16rem"
+                    sizelg="20rem"
+                />
             </div>
             <div className="info-content">
                 <Greeting />
