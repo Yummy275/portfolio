@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { colors } from '../util/colors';
+import { breakpoints } from '../util/breakpoints';
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -14,7 +15,13 @@ export const GlobalStyles = createGlobalStyle`
   } 
 
   .info-block {
-    margin-left: 40rem;
-  }
+    padding: 1rem;
 
+    @media(min-width: ${breakpoints.md}) {
+          margin-left: 20vw;
+    }
+    @media(min-width: ${breakpoints.xl}) {
+          margin-left: 40vw;
+    }
+  }
 `;

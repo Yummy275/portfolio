@@ -4,6 +4,7 @@ import { ContactLink } from './ContactLink';
 import linkedin from '../images/linkedin.png';
 import email from '../images/email.png';
 import waveGradient from '../images/wavesGradient.svg';
+import { breakpoints } from '../util/breakpoints';
 
 const Container = styled.div`
     height: 100vh;
@@ -12,22 +13,31 @@ const Container = styled.div`
 
     div.greeting-content {
         display: flex;
-        align-items: center;
+        flex-direction: column-reverse;
+        gap: 1rem;
+
+        @media (min-width: ${breakpoints.md}) {
+            flex-direction: row;
+            align-items: center;
+        }
+
         div.greeting-text {
-            padding: 1rem;
             font-size: 1.8rem;
             margin-left: 0.5rem;
         }
 
         div.contact-links {
             display: flex;
-            flex-direction: column;
             align-items: center;
             gap: 1rem;
+
+            @media (min-width: ${breakpoints.md}) {
+                flex-direction: column;
+            }
         }
     }
 
-    img.waves {
+    & > img {
         width: 100%;
         position: absolute;
         top: 0;

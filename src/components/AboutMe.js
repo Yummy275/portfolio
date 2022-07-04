@@ -16,19 +16,23 @@ const Container = styled.div`
     }
 
     .bodyshot {
-        width: 16rem;
+        width: 14rem;
+        height: auto;
+        border-radius: 10px;
     }
 
     .bio {
         display: flex;
+        align-items: flex-start;
         gap: 1rem;
         margin-top: 2rem;
+        padding: 1rem;
 
         .bio-info {
             width: 40rem;
 
             h1 {
-                margin: 1.5rem 0;
+                margin: 2rem 0;
             }
 
             .bio-text {
@@ -52,7 +56,7 @@ const AboutMe = () => {
                         <p>{bio[0]}</p>
                         <p>{bio[1]}</p>
                     </div>
-                    <h1>Tools</h1>
+                    <h1>Tech</h1>
                     <TechInfo />
                 </div>
                 <img className="bodyshot" src={bodyshot} alt="me" />

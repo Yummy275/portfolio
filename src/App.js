@@ -10,16 +10,13 @@ const Container = styled.div`
     div.morph-invert-circle {
         display: flex;
         justify-content: center;
-        position: fixed;
-        top: 0;
-        left: 0;
+        align-items: center;
+        width: fit-content;
 
         & > div {
-            margin-top: 3rem;
-            margin-left: 15rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            position: fixed;
+            margin-top: 40rem;
+            margin-right: -70vw;
         }
     }
 
@@ -32,9 +29,8 @@ function App() {
         <Container className="App">
             <GlobalStyles />
             <div className="morph-invert-circle">
-                <MorphingCircle size="35rem">
-                    <InvertBgCircle size="20rem" />
-                </MorphingCircle>
+                <MorphingCircle size="30rem" />
+                <InvertBgCircle size="20rem" />
             </div>
             <div className="info-content">
                 <Greeting />
