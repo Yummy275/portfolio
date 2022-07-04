@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ScrollingWaves } from './ScrollingWaves';
 import { ContactLink } from './ContactLink';
 import linkedin from '../images/linkedin.png';
 import email from '../images/email.png';
@@ -8,14 +9,14 @@ import { colors } from '../util/colors';
 const Container = styled.div`
     display: flex;
     align-items: center;
-    padding: 2rem;
-    margin-left: 10rem;
-    border: 1px solid ${colors.white};
+    height: 100vh;
+    overflow: hidden;
 
     div.greeting-text {
         padding: 1rem;
         font-size: 1.8rem;
         margin-left: 0.5rem;
+        background-color: ${colors.black};
     }
 
     div.contact-links {
@@ -44,6 +45,7 @@ const Greeting = () => {
                 <h1>I'm Humberto Gonzalez.</h1>
                 <h1>Web Developer.</h1>
             </div>
+            <ScrollingWaves />
         </Container>
     );
 };

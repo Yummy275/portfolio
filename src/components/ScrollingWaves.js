@@ -12,11 +12,9 @@ const scrollAnimation = keyframes`
 `;
 
 const Container = styled.div`
-    position: absolute;
     display: flex;
+    position: absolute;
     align-items: flex-end;
-    justify-content: flex-start;
-    height: 100%;
     width: 200vw;
     z-index: -1;
     animation: ${scrollAnimation} 60s ease-in-out alternate infinite;

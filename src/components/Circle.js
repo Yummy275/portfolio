@@ -1,6 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 import { colors } from '../util/colors';
-import blurryGrad from '../images/blurryGradient.svg';
 
 export const Circle = styled.div`
     width: ${(props) => props.size};
@@ -20,13 +19,15 @@ const MorphingBlob = keyframes`
 
 `;
 
-export const GreetingCircle = styled(Circle)`
-    animation: ${MorphingBlob} 10s ease infinite alternate;
+export const MorphingCircle = styled(Circle)`
+    animation: ${MorphingBlob} 20s linear infinite alternate;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    :hover {
-        background-image: url(${blurryGrad});
-        background-size: cover;
-    }
+    z-index: -1;
+`;
+
+export const InvertBgCircle = styled(Circle)`
+    backdrop-filter: invert(1);
+    border: none;
 `;

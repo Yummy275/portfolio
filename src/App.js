@@ -1,18 +1,30 @@
 import styled from 'styled-components';
 import { GlobalStyles } from './components/GlobalStyles';
 import Greeting from './components/Greeting';
-import { GreetingCircle } from './components/Circle';
+import AboutMe from './components/AboutMe';
+import { MorphingCircle, InvertBgCircle } from './components/Circle';
 
 const Container = styled.div`
-    display: flex;
     position: relative;
 
-    div.left {
-        width: 40%;
+    div.morph-invert-circle {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        & > div {
+            margin-top: 10rem;
+            margin-left: 25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
-    div.right {
-        width: 60%;
+    div.info-content {
+        padding: 1rem;
     }
 `;
 
@@ -20,11 +32,14 @@ function App() {
     return (
         <Container className="App">
             <GlobalStyles />
-            <div className="left">
-                <GreetingCircle size="30rem" />
+            <div className="morph-invert-circle">
+                <MorphingCircle size="35rem">
+                    <InvertBgCircle size="20rem" />
+                </MorphingCircle>
             </div>
-            <div className="right">
+            <div className="info-content">
                 <Greeting />
+                <AboutMe />
             </div>
         </Container>
     );
