@@ -26,7 +26,7 @@ const Container = styled.div`
         }
 
         .morphing-circle {
-            z-index: -5;
+            z-index: -10;
         }
 
         .invert-circle {
@@ -53,13 +53,14 @@ function App() {
                     className="invert-circle"
                     size="12rem"
                     sizemd="16rem"
-                    sizelg="20rem"
+                    sizelg="22rem"
                 />
             </div>
             <div className="info-content">
                 <Greeting />
                 <AboutMe />
                 <Projects />
+                <div style={{ height: '50rem' }} />
             </div>
         </Container>
     );

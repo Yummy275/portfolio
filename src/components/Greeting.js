@@ -49,7 +49,7 @@ const Container = styled.div`
         width: 100%;
         position: absolute;
         bottom: 0;
-        z-index: -50;
+        z-index: -9;
     }
 
     img.waves {
