@@ -35,22 +35,26 @@ const Container = styled.div`
         div.greeting-text {
             font-size: 1.1rem;
             margin-left: 8px;
-            text-align: center;
 
             @media (min-width: ${breakpoints.md}) {
-                text-align: left;
                 font-size: 1.3rem;
             }
 
             & > * {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
+
+                @media (min-width: ${breakpoints.md}) {
+                    justify-content: flex-start;
+                }
             }
         }
 
         div.contact-links {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 16px;
 
             @media (min-width: ${breakpoints.md}) {

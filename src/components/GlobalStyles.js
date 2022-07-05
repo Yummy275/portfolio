@@ -19,6 +19,9 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 900px;
     margin: 0 auto;
     @media(min-width: ${breakpoints.lg}) {
+          margin: 0 0 0 20vw;
+    }
+    @media(min-width: ${breakpoints.xxl}) {
           margin: 0 0 0 35vw;
     }
   }
