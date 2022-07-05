@@ -61,7 +61,7 @@ const MorphingCircleMd = styled(Circle)`
 `;
 const MorphingCircleSm = styled(Circle)`
     animation: ${MorphingBlobSm} 25s ease-in-out infinite alternate;
-    background-color: ${colors.blue};
+    background-color: ${colors.blue}6e;
 `;
 
 export const MorphingCircles = () => {

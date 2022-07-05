@@ -20,7 +20,6 @@ const Container = styled.div`
         display: flex;
         flex-direction: column-reverse;
         gap: 1rem;
-        padding: 1rem;
         margin-top: -10rem;
         z-index: 10;
 
@@ -30,10 +29,7 @@ const Container = styled.div`
         }
 
         div.greeting-text {
-            font-size: 1.4rem;
-
             @media (min-width: ${breakpoints.md}) {
-                font-size: 1.8rem;
             }
 
             margin-left: 0.5rem;

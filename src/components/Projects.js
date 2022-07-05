@@ -1,13 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ProjectCard } from './ProjectCard';
+import { Title } from './Text';
 import { colors } from '../util/colors';
 
 const Container = styled.div`
     .projects-content {
-        h1 {
-            margin: 2rem 0;
-        }
     }
 
     .projects-container {
@@ -22,7 +20,9 @@ const Projects = () => {
     return (
         <Container>
             <div className="info-block projects-content">
-                <h1>Projects</h1>
+                <Title>
+                    <h2>Projects</h2>
+                </Title>
                 <div className="projects-container">
                     <ProjectCard
                         title="The Tester"

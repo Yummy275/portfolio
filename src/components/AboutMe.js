@@ -4,6 +4,7 @@ import bodyshot from '../images/longshot.jpg';
 import headshot from '../images/headshot.jpg';
 import TechInfo from './TechInfo';
 import { breakpoints } from '../util/breakpoints';
+import { Title } from './Text';
 
 const bio = [
     "I'm a self taught developer looking to work on web projects. With a passion for elegant design and clean maintainable code, I hope to help push you towards your goals. ",
@@ -15,13 +16,7 @@ const Container = styled.div`
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    margin-top: 2rem;
-    padding: 1rem;
     flex-direction: column-reverse;
-
-    p {
-        font-size: 1.7rem;
-    }
 
     img {
         border-radius: 10px;
@@ -49,10 +44,6 @@ const Container = styled.div`
     }
 
     .bio-info {
-        h1 {
-            margin: 2rem 0;
-        }
-
         max-width: 32rem;
 
         .bio-text {
@@ -69,12 +60,16 @@ const AboutMe = () => {
     return (
         <Container className="info-block">
             <div className="bio-info">
-                <h1>Who am I?</h1>
+                <Title>
+                    <h2>Who am I?</h2>
+                </Title>
                 <div className="bio-text">
                     <p>{bio[0]}</p>
                     <p>{bio[1]}</p>
                 </div>
-                <h1>Tech</h1>
+                <Title>
+                    <h2>Tech</h2>
+                </Title>
                 <TechInfo />
             </div>
             <img className="bodyshot" src={bodyshot} alt="me" />
