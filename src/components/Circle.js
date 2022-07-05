@@ -6,7 +6,7 @@ export const Circle = styled.div`
     width: ${(props) => props.size};
     height: ${(props) => props.size};
     border-radius: 50%;
-    border: 6px solid ${colors.blue};
+    border: 8px solid ${colors.blue};
     transition: all 0.3s ease-out;
 
     @media (min-width: ${breakpoints.md}) {
@@ -34,7 +34,7 @@ const MorphingBlob = keyframes`
 `;
 
 export const MorphingCircle = styled(Circle)`
-    animation: ${MorphingBlob} 20s linear infinite alternate;
+    animation: ${MorphingBlob} 16s linear infinite alternate;
 `;
 
 const MorphingBlobTwo = keyframes`
@@ -48,7 +48,7 @@ const MorphingBlobTwo = keyframes`
 `;
 
 export const MorphingCircleTwo = styled(Circle)`
-    animation: ${MorphingBlobTwo} 15s linear infinite alternate;
+    animation: ${MorphingBlobTwo} 11s linear infinite alternate;
 `;
 
 export const InvertBgCircle = styled(Circle)`

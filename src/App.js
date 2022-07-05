@@ -3,6 +3,7 @@ import { GlobalStyles } from './components/GlobalStyles';
 import Greeting from './components/Greeting';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 import {
     MorphingCircle,
     MorphingCircleTwo,
@@ -70,7 +71,7 @@ function App() {
                 <Greeting />
                 <AboutMe />
                 <Projects />
-                <div style={{ height: '50rem' }} />
+                <Footer />
             </div>
         </Container>
     );
