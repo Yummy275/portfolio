@@ -1,12 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ProjectCard } from './ProjectCard';
-import blurryBg from '../images/blurryGradientBg.svg';
+import { colors } from '../util/colors';
 
 const Container = styled.div`
     margin-top: 10rem;
-    background-image: url(${blurryBg});
-    background-size: cover;
 
     .projects-content {
         padding: 2rem;

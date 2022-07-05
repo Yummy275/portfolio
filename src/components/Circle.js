@@ -6,7 +6,7 @@ export const Circle = styled.div`
     width: ${(props) => props.size};
     height: ${(props) => props.size};
     border-radius: 50%;
-    border: 6px solid ${colors.lightBlue};
+    border: 6px solid ${colors.blue};
     transition: all 0.3s ease-out;
 
     @media (min-width: ${breakpoints.md}) {
