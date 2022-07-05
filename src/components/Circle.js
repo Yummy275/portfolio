@@ -24,7 +24,7 @@ export const Circle = styled.div`
 `;
 
 const MorphingBlob = keyframes`
-    0% { border-radius: 50%}
+    0% { border-radius: 31% 40% 64% 44% / 25% 38% 58% 33% }
   100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
    20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
    40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
@@ -35,6 +35,20 @@ const MorphingBlob = keyframes`
 
 export const MorphingCircle = styled(Circle)`
     animation: ${MorphingBlob} 20s linear infinite alternate;
+`;
+
+const MorphingBlobTwo = keyframes`
+    0% { border-radius: 52% 33% 45% 76% / 53% 44% 64% 48% }
+  100% { border-radius: 32% 27% 55% 43% / 58% 39% 54% 66%; } 
+   20% { border-radius: 28% 67% 44% 33% / 11% 66% 44% 77%; } 
+   40% { border-radius: 54% 64% 42% 36% / 64% 75% 44% 23%; } 
+   60% { border-radius: 37% 63% 55% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 63% 59%; } 
+
+`;
+
+export const MorphingCircleTwo = styled(Circle)`
+    animation: ${MorphingBlobTwo} 15s linear infinite alternate;
 `;
 
 export const InvertBgCircle = styled(Circle)`

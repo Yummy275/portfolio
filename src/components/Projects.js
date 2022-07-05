@@ -8,6 +8,9 @@ const Container = styled.div`
 
     .projects-content {
         padding: 2rem;
+        h1 {
+            margin: 1rem 0;
+        }
     }
 
     .projects-container {

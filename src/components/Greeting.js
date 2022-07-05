@@ -18,6 +18,7 @@ const Container = styled.div`
         flex-direction: column-reverse;
         gap: 1rem;
         padding: 1rem;
+        margin-top: -10rem;
 
         @media (min-width: ${breakpoints.md}) {
             flex-direction: row;

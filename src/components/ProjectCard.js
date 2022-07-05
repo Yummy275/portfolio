@@ -7,9 +7,9 @@ const Container = styled.div`
     width: 26rem;
     height: fit-content;
     padding: 1.5rem;
-    border-right: 2px solid ${colors.white};
-    border-bottom: 2px solid ${colors.white};
-    border-bottom-right-radius: 10px;
+    border-left: 2px solid ${colors.white};
+    border-top: 2px solid ${colors.white};
+    border-top-left-radius: 10px;
     .title {
         margin-bottom: 0.5rem;
     }
