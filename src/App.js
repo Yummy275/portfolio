@@ -5,8 +5,8 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import {
-    MorphingCircle,
-    MorphingCircleTwo,
+    MorphingCircleSm,
+    MorphingCircleLg,
     InvertBgCircle,
 } from './components/Circle';
 import { breakpoints } from './util/breakpoints';
@@ -48,13 +48,13 @@ function App() {
         <Container className="App">
             <GlobalStyles />
             <div className="morph-invert-circle">
-                <MorphingCircleTwo
+                <MorphingCircleSm
                     className="morphing-circle"
-                    size="16rem"
-                    sizemd="24rem"
-                    sizelg="32rem"
+                    size="18rem"
+                    sizemd="26rem"
+                    sizelg="34rem"
                 />
-                <MorphingCircle
+                <MorphingCircleLg
                     className="morphing-circle"
                     size="22rem"
                     sizemd="30rem"
