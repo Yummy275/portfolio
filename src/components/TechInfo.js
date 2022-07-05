@@ -12,7 +12,6 @@ const Container = styled.div`
         justify-content: flex-end;
         flex-wrap: wrap;
         gap: 10px;
-        max-width: 600px;
     }
 `;
 

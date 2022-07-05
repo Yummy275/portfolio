@@ -5,12 +5,14 @@ import { Title } from './Text';
 import { colors } from '../util/colors';
 
 const Container = styled.div`
+    margin-top: 60px;
     .projects-content {
     }
 
     .projects-container {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 32px;
         flex-wrap: wrap;
     }

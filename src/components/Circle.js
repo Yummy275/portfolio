@@ -8,6 +8,7 @@ export const Circle = styled.div`
     border-radius: 50%;
     border: 8px solid ${colors.blue}6e;
     transition: all 0.3s ease-out;
+    pointer-events: none;
 
     @media (min-width: ${breakpoints.md}) {
         width: ${(props) => props.sizemd};
@@ -53,6 +54,16 @@ const MorphingBlobLg = keyframes`
 
 `;
 
+const MorphingBlobXl = keyframes`
+    0% { border-radius: 78% 69% 30% 63% / 70% 51% 63% 48% }
+    20% { border-radius: 43% 46% 53% 39% / 22% 65% 68% 75% }
+    40% { border-radius: 44% 57% 37% 40% / 65% 66% 77% 63% }
+    60% { border-radius: 56% 46% 72% 63% / 26% 52% 68% 38% }
+    80% { border-radius: 38% 35% 55% 68% / 28% 39% 76% 30% }
+    100% { border-radius: 34% 54% 46% 76% / 59% 79% 57% 32% }
+
+`;
+
 const MorphingCircleLg = styled(Circle)`
     animation: ${MorphingBlobLg} 30s ease-in-out infinite alternate;
 `;
@@ -64,12 +75,17 @@ const MorphingCircleSm = styled(Circle)`
     background-color: ${colors.blue}6e;
 `;
 
+const MorphingCircleXl = styled(Circle)`
+    animation: ${MorphingBlobXl} 22s ease-in-out infinite alternate;
+`;
+
 export const MorphingCircles = () => {
     return (
         <>
             <MorphingCircleSm size="220px" sizemd="250px" sizelg="280px" />
             <MorphingCircleMd size="320px" sizemd="350px" sizelg="380px" />
             <MorphingCircleLg size="420px" sizemd="450px" sizelg="480px" />
+            <MorphingCircleXl size="520px" sizemd="550px" sizelg="580px" />
         </>
     );
 };
@@ -82,7 +98,6 @@ const Float = keyframes`
   to {
     transform: rotate(360deg) translate3d(10px, 0, 0) rotate(-360deg);
   }
-}
 `;
 
 export const InvertCircle = styled(Circle)`

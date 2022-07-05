@@ -35,7 +35,7 @@ function App() {
             <div className="main-circles">
                 <MorphingCircles />
             </div>
-            <div className="info-content">
+            <div className="main-content">
                 <Greeting />
                 <AboutMe />
                 <Projects />

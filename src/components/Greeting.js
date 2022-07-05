@@ -6,6 +6,7 @@ import email from '../images/email.png';
 import waveGradientVertical from '../images/wavesGradientVertical.svg';
 import waveGradient from '../images/wavesGradient.svg';
 import { InvertCircle } from './Circle';
+import BouncyHoverLetters from './BouncyHoverLetters';
 import { breakpoints } from '../util/breakpoints';
 import { colors } from '../util/colors';
 
@@ -29,10 +30,19 @@ const Container = styled.div`
         }
 
         div.greeting-text {
+            font-size: 1.1rem;
+            margin-left: 8px;
+            text-align: center;
+
             @media (min-width: ${breakpoints.md}) {
+                text-align: left;
+                font-size: 1.3rem;
             }
 
-            margin-left: 8px;
+            & > * {
+                display: flex;
+                flex-wrap: wrap;
+            }
         }
 
         div.contact-links {
@@ -91,9 +101,18 @@ const Greeting = () => {
                     />
                 </div>
                 <div className="greeting-text">
-                    <h1>Hello.</h1>
-                    <h1>I'm Humberto Gonzalez.</h1>
-                    <h1>Web Developer.</h1>
+                    <h1>
+                        <BouncyHoverLetters word="Hello." />
+                    </h1>
+                    <h1>
+                        <BouncyHoverLetters word="I'm " />
+                        <BouncyHoverLetters word="Humberto " />
+                        <BouncyHoverLetters word="Gonzalez." />
+                    </h1>
+                    <h1>
+                        <BouncyHoverLetters word="Web " />
+                        <BouncyHoverLetters word="Developer." />
+                    </h1>
                 </div>
             </div>
             <img className="waves" src={waveGradient} alt="gradient-waves" />

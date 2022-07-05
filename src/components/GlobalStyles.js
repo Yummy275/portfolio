@@ -12,9 +12,11 @@ export const GlobalStyles = createGlobalStyle`
   
   html {
     background-color: ${colors.black};
+    font-size: 130%;
   } 
 
   .info-block {
+    max-width: 1000px;
     @media(min-width: ${breakpoints.md}) {
           margin-left: 20vw;
     }
