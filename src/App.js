@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { GlobalStyles } from './components/GlobalStyles';
-import Greeting from './components/Greeting';
+import InvertBallWave from './components/InvertBallWave';
+import MessageBox from './components/MessageBox';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
-import Footer from './components/Footer';
 import { MorphingCircles } from './components/Circle';
 import { breakpoints } from './util/breakpoints';
 
@@ -35,11 +35,11 @@ function App() {
             <div className="main-circles">
                 <MorphingCircles />
             </div>
-            <div className="main-content">
-                <Greeting />
+            <InvertBallWave />
+            <MessageBox />
+            <div className="info-content">
                 <AboutMe />
                 <Projects />
-                <Footer />
             </div>
         </Container>
     );
