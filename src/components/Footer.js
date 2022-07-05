@@ -3,34 +3,41 @@ import styled from 'styled-components';
 import { ContactLink } from './ContactLink';
 import linkedin from '../images/linkedin.png';
 import email from '../images/email.png';
+import { colors } from '../util/colors';
 
 const Container = styled.div`
     margin-top: 10rem;
+    background-color: ${colors.blue};
+    padding: 1rem;
 
     .contact-links {
         display: flex;
-        margin: 2rem 0;
+        margin-top: 2rem;
+        gap: 2rem;
+        text-align: center;
     }
 `;
 
 const Footer = () => {
     return (
-        <Container className="info-block">
-            <h1>Contact me</h1>
-            <div className="contact-links">
-                <div>
-                    <ContactLink
-                        target="mailto:htgonzalez27@gmail.com"
-                        icon={email}
-                    />
-                    <h3>Email</h3>
-                </div>
-                <div>
-                    <ContactLink
-                        icon={linkedin}
-                        target="https://www.linkedin.com/in/humberto-gonzalez275/"
-                    />
-                    <h3>LinkedIn</h3>
+        <Container>
+            <div className="info-block">
+                <h1>Contact me</h1>
+                <div className="contact-links">
+                    <div>
+                        <ContactLink
+                            target="mailto:htgonzalez27@gmail.com"
+                            icon={email}
+                        />
+                        <h3>Email</h3>
+                    </div>
+                    <div>
+                        <ContactLink
+                            icon={linkedin}
+                            target="https://www.linkedin.com/in/humberto-gonzalez275/"
+                        />
+                        <h3>LinkedIn</h3>
+                    </div>
                 </div>
             </div>
         </Container>

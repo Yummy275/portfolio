@@ -4,12 +4,9 @@ import { ProjectCard } from './ProjectCard';
 import { colors } from '../util/colors';
 
 const Container = styled.div`
-    margin-top: 10rem;
-
     .projects-content {
-        padding: 2rem;
         h1 {
-            margin: 1rem 0;
+            margin: 2rem 0;
         }
     }
 

@@ -5,13 +5,16 @@ import linkedin from '../images/linkedin.png';
 import email from '../images/email.png';
 import waveGradientVertical from '../images/wavesGradientVertical.svg';
 import waveGradient from '../images/wavesGradient.svg';
+import { InvertCircle } from './Circle';
 import { breakpoints } from '../util/breakpoints';
+import { colors } from '../util/colors';
 
 const Container = styled.div`
     height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
+    background-color: ${colors.black};
 
     div.greeting-content {
         display: flex;
@@ -19,6 +22,7 @@ const Container = styled.div`
         gap: 1rem;
         padding: 1rem;
         margin-top: -10rem;
+        z-index: 10;
 
         @media (min-width: ${breakpoints.md}) {
             flex-direction: row;
@@ -46,11 +50,20 @@ const Container = styled.div`
         }
     }
 
+    div.invert-circle {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 2rem;
+
+        @media (min-width: ${breakpoints.md}) {
+            margin-left: 10vw;
+        }
+    }
+
     & > img {
         width: 100%;
         position: absolute;
         bottom: 0;
-        z-index: -9;
     }
 
     img.waves {
@@ -92,6 +105,12 @@ const Greeting = () => {
                 className="waves-vertical"
                 src={waveGradientVertical}
                 alt="gradient-waves"
+            />
+            <InvertCircle
+                className="invert-circle"
+                size="13rem"
+                sizemd="18rem"
+                sizelg="24rem"
             />
         </Container>
     );
