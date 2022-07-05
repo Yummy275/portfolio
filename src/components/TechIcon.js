@@ -15,7 +15,6 @@ const Container = styled.div`
 
     .tech-label {
         margin-top: 10px;
-        font-size: 1.3rem;
     }
 `;
 
@@ -23,7 +22,7 @@ const TechIcon = ({ icon, title }) => {
     return (
         <Container>
             <img src={icon} alt="tech-icon" />
-            <h2 className="tech-label">{title}</h2>
+            <h4 className="tech-label">{title}</h4>
         </Container>
     );
 };

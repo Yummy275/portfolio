@@ -18,16 +18,13 @@ const Container = styled.div`
 
         & > div {
             position: fixed;
-            margin-top: 40rem;
+            margin-top: 620px;
             margin-right: -10vw;
             z-index: -20;
             @media (min-width: ${breakpoints.md}) {
                 margin-right: -70vw;
             }
         }
-    }
-
-    div.info-content {
     }
 `;
 

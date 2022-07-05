@@ -6,14 +6,14 @@ import email from '../images/email.png';
 import { colors } from '../util/colors';
 
 const Container = styled.div`
-    margin-top: 10rem;
+    margin-top: 160px;
     background-color: ${colors.blue};
-    padding: 1rem;
+    padding: 16px;
 
     .contact-links {
         display: flex;
-        margin-top: 2rem;
-        gap: 2rem;
+        margin-top: 32px;
+        gap: 32px;
         text-align: center;
     }
 `;

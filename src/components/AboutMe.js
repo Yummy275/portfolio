@@ -12,10 +12,10 @@ const bio = [
 ];
 
 const Container = styled.div`
-    margin-top: 10rem;
+    margin-top: 160px;
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 16px;
     flex-direction: column-reverse;
 
     img {
@@ -30,13 +30,13 @@ const Container = styled.div`
         display: none;
         @media (min-width: ${breakpoints.md}) {
             display: block;
-            width: 14rem;
+            width: 220px;
             height: auto;
         }
     }
 
     img.headshot {
-        width: 14rem;
+        width: 200px;
         margin: 0 auto;
         @media (min-width: ${breakpoints.md}) {
             display: none;
@@ -44,13 +44,11 @@ const Container = styled.div`
     }
 
     .bio-info {
-        max-width: 32rem;
+        max-width: 510px;
 
         .bio-text {
-            margin-left: 2rem;
-
             & > :first-child {
-                margin-bottom: 1rem;
+                margin-bottom: 16px;
             }
         }
     }

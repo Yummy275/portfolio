@@ -67,9 +67,9 @@ const MorphingCircleSm = styled(Circle)`
 export const MorphingCircles = () => {
     return (
         <>
-            <MorphingCircleSm size="12rem" sizemd="15rem" sizelg="18rem" />
-            <MorphingCircleMd size="18rem" sizemd="26rem" sizelg="34rem" />
-            <MorphingCircleLg size="24rem" sizemd="32rem" sizelg="40rem" />
+            <MorphingCircleSm size="220px" sizemd="250px" sizelg="280px" />
+            <MorphingCircleMd size="320px" sizemd="350px" sizelg="380px" />
+            <MorphingCircleLg size="420px" sizemd="450px" sizelg="480px" />
         </>
     );
 };

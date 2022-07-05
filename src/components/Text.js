@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import { colors } from '../util/colors';
 
 export const Title = styled.div`
-    padding: 1rem;
+    padding: 16px;
     backdrop-filter: invert(1);
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    margin-bottom: 32px;
 
     & > * {
         color: ${colors.blue};

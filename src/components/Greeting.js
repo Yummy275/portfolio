@@ -19,8 +19,8 @@ const Container = styled.div`
     div.greeting-content {
         display: flex;
         flex-direction: column-reverse;
-        gap: 1rem;
-        margin-top: -10rem;
+        gap: 16px;
+        margin-top: -160px;
         z-index: 10;
 
         @media (min-width: ${breakpoints.md}) {
@@ -32,13 +32,13 @@ const Container = styled.div`
             @media (min-width: ${breakpoints.md}) {
             }
 
-            margin-left: 0.5rem;
+            margin-left: 8px;
         }
 
         div.contact-links {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 16px;
 
             @media (min-width: ${breakpoints.md}) {
                 flex-direction: column;
@@ -49,7 +49,7 @@ const Container = styled.div`
     div.invert-circle {
         position: absolute;
         bottom: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
         margin-left: 10vw;
         @media (min-width: ${breakpoints.lg}) {
             margin-left: 20vw;

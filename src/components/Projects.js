@@ -11,7 +11,7 @@ const Container = styled.div`
     .projects-container {
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 32px;
         flex-wrap: wrap;
     }
 `;

@@ -6,7 +6,6 @@ import { techInfo } from '../util/techInfo';
 const Container = styled.div`
     display: flex;
     justify-content: flex-end;
-    margin-top: 30px;
 
     .tech-icon-container {
         display: flex;
