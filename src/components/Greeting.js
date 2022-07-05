@@ -21,7 +21,6 @@ const Container = styled.div`
         display: flex;
         flex-direction: column-reverse;
         gap: 16px;
-        margin-top: -160px;
         z-index: 10;
 
         @media (min-width: ${breakpoints.md}) {
@@ -70,6 +69,7 @@ const Container = styled.div`
         width: 100%;
         position: absolute;
         bottom: 0;
+        z-index: 1;
     }
 
     img.waves {
@@ -89,30 +89,32 @@ const Container = styled.div`
 const Greeting = () => {
     return (
         <Container>
-            <div className="greeting-content info-block">
-                <div className="contact-links">
-                    <ContactLink
-                        target="mailto:htgonzalez27@gmail.com"
-                        icon={email}
-                    />
-                    <ContactLink
-                        icon={linkedin}
-                        target="https://www.linkedin.com/in/humberto-gonzalez275/"
-                    />
-                </div>
-                <div className="greeting-text">
-                    <h1>
-                        <BouncyHoverLetters word="Hello." />
-                    </h1>
-                    <h1>
-                        <BouncyHoverLetters word="I'm " />
-                        <BouncyHoverLetters word="Humberto " />
-                        <BouncyHoverLetters word="Gonzalez." />
-                    </h1>
-                    <h1>
-                        <BouncyHoverLetters word="Web " />
-                        <BouncyHoverLetters word="Developer." />
-                    </h1>
+            <div className="info-block">
+                <div className="greeting-content">
+                    <div className="contact-links">
+                        <ContactLink
+                            target="mailto:htgonzalez27@gmail.com"
+                            icon={email}
+                        />
+                        <ContactLink
+                            icon={linkedin}
+                            target="https://www.linkedin.com/in/humberto-gonzalez275/"
+                        />
+                    </div>
+                    <div className="greeting-text">
+                        <h1>
+                            <BouncyHoverLetters word="Hello." />
+                        </h1>
+                        <h1>
+                            <BouncyHoverLetters word="I'm " />
+                            <BouncyHoverLetters word="Humberto " />
+                            <BouncyHoverLetters word="Gonzalez." />
+                        </h1>
+                        <h1>
+                            <BouncyHoverLetters word="Web " />
+                            <BouncyHoverLetters word="Developer." />
+                        </h1>
+                    </div>
                 </div>
             </div>
             <img className="waves" src={waveGradient} alt="gradient-waves" />

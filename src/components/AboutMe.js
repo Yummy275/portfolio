@@ -18,6 +18,17 @@ const Container = styled.div`
     gap: 16px;
     flex-direction: column-reverse;
 
+    .bio-info {
+        .bio-text {
+            padding: 10px;
+            margin-bottom: 60px;
+
+            & > :first-child {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
     img {
         border-radius: 10px;
     }
@@ -26,37 +37,35 @@ const Container = styled.div`
         flex-direction: row;
     }
 
-    img.bodyshot {
-        display: none;
-        @media (min-width: ${breakpoints.md}) {
-            display: block;
-            width: 220px;
-            height: auto;
-        }
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-            rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-            rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    }
-
-    img.headshot {
-        width: 200px;
+    .portrait {
+        padding: 10px;
+        width: fit-content;
         margin: 0 auto;
-        @media (min-width: ${breakpoints.md}) {
+
+        img.bodyshot {
             display: none;
-        }
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-            rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-            rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    }
-
-    .bio-info {
-        max-width: 600px;
-
-        .bio-text {
-            margin-bottom: 60px;
-            & > :first-child {
-                margin-bottom: 16px;
+            @media (min-width: ${breakpoints.md}) {
+                display: block;
+                width: 220px;
+                height: auto;
             }
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        img.headshot {
+            width: 200px;
+            @media (min-width: ${breakpoints.md}) {
+                display: none;
+            }
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
         }
     }
 `;
@@ -77,8 +86,10 @@ const AboutMe = () => {
                 </Title>
                 <TechInfo />
             </div>
-            <img className="bodyshot" src={bodyshot} alt="me" />
-            <img className="headshot" src={headshot} alt="me" />
+            <div className="portrait">
+                <img className="bodyshot" src={bodyshot} alt="me" />
+                <img className="headshot" src={headshot} alt="me" />
+            </div>
         </Container>
     );
 };

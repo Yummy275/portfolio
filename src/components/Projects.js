@@ -5,8 +5,8 @@ import { Title } from './Text';
 import { colors } from '../util/colors';
 
 const Container = styled.div`
-    margin-top: 60px;
     .projects-content {
+        margin-top: 60px;
     }
 
     .projects-container {
@@ -15,13 +15,14 @@ const Container = styled.div`
         justify-content: center;
         gap: 32px;
         flex-wrap: wrap;
+        padding: 10px;
     }
 `;
 
 const Projects = () => {
     return (
-        <Container>
-            <div className="info-block projects-content">
+        <Container className="info-block">
+            <div className="projects-content">
                 <Title>
                     <h2>Projects</h2>
                 </Title>

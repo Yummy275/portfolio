@@ -16,12 +16,10 @@ export const GlobalStyles = createGlobalStyle`
   } 
 
   .info-block {
-    max-width: 1000px;
-    @media(min-width: ${breakpoints.md}) {
-          margin-left: 20vw;
-    }
-    @media(min-width: ${breakpoints.xl}) {
-          margin-left: 35vw;
+    max-width: 900px;
+    margin: 0 auto;
+    @media(min-width: ${breakpoints.lg}) {
+          margin: 0 0 0 35vw;
     }
   }
 `;
