@@ -1,10 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import { colors } from '../util/colors';
 import { Button } from './Button';
 
 const Container = styled.div`
     width: 26rem;
+    height: fit-content;
     padding: 1.5rem;
+    border-right: 2px solid ${colors.white};
+    border-bottom: 2px solid ${colors.white};
+    border-bottom-right-radius: 10px;
     .title {
         margin-bottom: 0.5rem;
     }
