@@ -15,7 +15,6 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     position: relative;
-    background-color: ${colors.black};
 
     div.greeting-content {
         display: flex;
@@ -66,10 +65,10 @@ const Container = styled.div`
     }
 
     & > img {
+        z-index: -5;
         width: 100%;
         position: absolute;
         bottom: 0;
-        z-index: 1;
     }
 
     img.waves {
