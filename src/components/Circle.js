@@ -54,22 +54,22 @@ const MorphingBlobLg = keyframes`
 `;
 
 const MorphingCircleLg = styled(Circle)`
-    animation: ${MorphingBlobLg} 18s ease-in-out infinite alternate;
+    animation: ${MorphingBlobLg} 30s ease-in-out infinite alternate;
 `;
 const MorphingCircleMd = styled(Circle)`
-    animation: ${MorphingBlobMd} 12s ease-in-out infinite alternate;
+    animation: ${MorphingBlobMd} 21s ease-in-out infinite alternate;
 `;
 const MorphingCircleSm = styled(Circle)`
-    animation: ${MorphingBlobSm} 15s ease-in-out infinite alternate;
+    animation: ${MorphingBlobSm} 25s ease-in-out infinite alternate;
     background-color: ${colors.blue};
 `;
 
 export const MorphingCircles = () => {
     return (
         <>
-            <MorphingCircleSm size="12rem" sizemd="16rem" sizelg="22rem" />
+            <MorphingCircleSm size="12rem" sizemd="15rem" sizelg="18rem" />
             <MorphingCircleMd size="18rem" sizemd="26rem" sizelg="34rem" />
-            <MorphingCircleLg size="28rem" sizemd="36rem" sizelg="44rem" />
+            <MorphingCircleLg size="24rem" sizemd="32rem" sizelg="40rem" />
         </>
     );
 };

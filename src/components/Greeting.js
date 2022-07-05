@@ -54,9 +54,9 @@ const Container = styled.div`
         position: absolute;
         bottom: 0;
         margin-bottom: 2rem;
-
-        @media (min-width: ${breakpoints.md}) {
-            margin-left: 10vw;
+        margin-left: 10vw;
+        @media (min-width: ${breakpoints.lg}) {
+            margin-left: 20vw;
         }
     }
 
