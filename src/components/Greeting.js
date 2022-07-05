@@ -15,12 +15,17 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     position: relative;
+    background-color: ${colors.black};
+    margin-bottom: 160px;
+
+    .top-z-index {
+        z-index: 10;
+    }
 
     div.greeting-content {
         display: flex;
         flex-direction: column-reverse;
         gap: 16px;
-        z-index: 10;
 
         @media (min-width: ${breakpoints.md}) {
             flex-direction: row;
@@ -65,7 +70,6 @@ const Container = styled.div`
     }
 
     & > img {
-        z-index: -5;
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -88,7 +92,7 @@ const Container = styled.div`
 const Greeting = () => {
     return (
         <Container>
-            <div className="info-block">
+            <div className="info-block top-z-index">
                 <div className="greeting-content">
                     <div className="contact-links">
                         <ContactLink
