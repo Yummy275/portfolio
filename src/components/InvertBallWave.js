@@ -4,11 +4,13 @@ import waveGradientVertical from '../images/wavesGradientVertical.svg';
 import waveGradient from '../images/wavesGradient.svg';
 import { InvertCircle } from './Circle';
 import { breakpoints } from '../util/breakpoints';
+import { colors } from '../util/colors';
 
 const Container = styled.div`
-    position: relative;
     height: 100vh;
-
+    display: flex;
+    align-items: flex-end;
+    background-color: ${colors.black};
     img {
         width: 100%;
     }

@@ -8,9 +8,7 @@ import { MorphingCircles } from './components/Circle';
 import { breakpoints } from './util/breakpoints';
 
 const Container = styled.div`
-    position: relative;
-
-    div.main-circles {
+    .main-circles {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -35,9 +33,8 @@ function App() {
             <div className="main-circles">
                 <MorphingCircles />
             </div>
-            <InvertBallWave />
-            <MessageBox />
             <div className="info-content">
+                <InvertBallWave />
                 <AboutMe />
                 <Projects />
             </div>

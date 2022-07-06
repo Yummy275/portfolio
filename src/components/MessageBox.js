@@ -8,10 +8,10 @@ import { breakpoints } from '../util/breakpoints';
 import { colors } from '../util/colors';
 
 const Container = styled.div`
-    background-color: ${colors.black};
-    margin-bottom: 160px;
-    position: sticky;
+    position: absolute;
     top: 0;
+    z-index: 10;
+    padding: 36px;
 
     .greeting-content {
         display: flex;
