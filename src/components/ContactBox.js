@@ -8,7 +8,7 @@ import { breakpoints } from '../util/breakpoints';
 import { colors } from '../util/colors';
 
 const Container = styled.div`
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 10;
     padding: 36px;
@@ -55,7 +55,7 @@ const Container = styled.div`
     }
 `;
 
-const MessageBox = () => {
+const ContactBox = () => {
     return (
         <Container>
             <div className="info-block">
@@ -90,4 +90,4 @@ const MessageBox = () => {
     );
 };
 
-export default MessageBox;
+export default ContactBox;

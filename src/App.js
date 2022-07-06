@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { GlobalStyles } from './components/GlobalStyles';
 import InvertBallWave from './components/InvertBallWave';
-import MessageBox from './components/MessageBox';
+import ContactBox from './components/ContactBox';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import { MorphingCircles } from './components/Circle';
@@ -30,6 +30,7 @@ function App() {
     return (
         <Container className="App">
             <GlobalStyles />
+            <ContactBox />
             <div className="main-circles">
                 <MorphingCircles />
             </div>
