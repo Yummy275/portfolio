@@ -12,13 +12,12 @@ const Container = styled.div`
     position: fixed;
     top: 0;
     z-index: 10;
-    padding: 36px;
 
     .box-content {
         display: flex;
         flex-direction: column-reverse;
         gap: 16px;
-        min-height: 200px;
+        padding: 24px;
 
         @media (min-width: ${breakpoints.md}) {
             flex-direction: row;
@@ -39,11 +38,6 @@ const Container = styled.div`
             & > * {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
-
-                @media (min-width: ${breakpoints.md}) {
-                    justify-content: flex-start;
-                }
             }
         }
 
@@ -92,10 +86,11 @@ const ContactBox = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPos = window.pageYOffset;
-            if (transformTrigger && scrollPos < 400) {
+            const triggerVal = 300;
+            if (transformTrigger && scrollPos < triggerVal) {
                 setTransformTrigger(false);
             }
-            if (!transformTrigger && scrollPos >= 400) {
+            if (!transformTrigger && scrollPos >= triggerVal) {
                 setTransformTrigger(true);
             }
         };
