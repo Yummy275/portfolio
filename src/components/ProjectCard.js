@@ -7,8 +7,8 @@ const Container = styled.div`
     width: 324px;
     height: fit-content;
     padding: 24px;
-    border-left: 2px solid ${colors.white};
-    border-top: 2px solid ${colors.white};
+    border-left: 3px solid ${colors.white};
+    border-top: 3px solid ${colors.white};
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: all 0.2s ease;

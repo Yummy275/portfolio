@@ -4,7 +4,6 @@ import InvertBallWave from './components/InvertBallWave';
 import ContactBox from './components/ContactBox';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
-import { MorphingCircles } from './components/Circle';
 import { breakpoints } from './util/breakpoints';
 
 const Container = styled.div`

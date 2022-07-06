@@ -12,7 +12,7 @@ const bio = [
 ];
 
 const Container = styled.div`
-    margin-top: 250px;
+    margin-top: 200px;
     display: flex;
     align-items: flex-start;
     gap: 16px;
