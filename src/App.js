@@ -16,7 +16,7 @@ const Container = styled.div`
 
         & > div {
             position: fixed;
-            margin-top: 620px;
+            margin-top: 1000px;
             margin-right: -10vw;
             z-index: -20;
             @media (min-width: ${breakpoints.md}) {
@@ -31,9 +31,6 @@ function App() {
         <Container className="App">
             <GlobalStyles />
             <ContactBox />
-            <div className="main-circles">
-                <MorphingCircles />
-            </div>
             <div className="info-content">
                 <InvertBallWave />
                 <AboutMe />

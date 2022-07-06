@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   html {
-    background-color: ${colors.black};
+    background-color: ${colors.blue};
     font-size: 130%;
   } 
 

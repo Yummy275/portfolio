@@ -11,6 +11,13 @@ const Container = styled.div`
     border-top: 2px solid ${colors.white};
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    transition: all 0.2s ease;
+
+    :hover {
+        transform: translate(8px, -8px);
+        background-color: ${colors.black};
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 
     .title {
         margin-bottom: 8px;

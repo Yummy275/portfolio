@@ -25,7 +25,7 @@ const Container = styled.div`
         }
 
         .box-text {
-            animation: ${FadeShiftIn('10px', '10px')} 0.3s ease-in forwards;
+            animation: ${FadeShiftIn('10px', '8px')} 0.2s 0.1s ease-in forwards;
             opacity: 0;
             font-size: 1.1rem;
             margin-left: 8px;
@@ -58,7 +58,7 @@ const Container = styled.div`
 const GreetingMsg = (
     <>
         <h1>
-            <BouncyHoverLetters word="Hello." />
+            <BouncyHoverLetters word="Hello!" />
         </h1>
         <h1>
             <BouncyHoverLetters word="I'm " />

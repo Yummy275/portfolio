@@ -6,7 +6,7 @@ import { colors } from '../util/colors';
 
 const Container = styled.div`
     .projects-content {
-        margin-top: 60px;
+        margin-top: 100px;
     }
 
     .projects-container {

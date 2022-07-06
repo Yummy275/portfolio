@@ -4,6 +4,7 @@ import waveGradientVertical from '../images/wavesGradientVertical.svg';
 import waveGradient from '../images/wavesGradient.svg';
 import { InvertCircle } from './Circle';
 import { breakpoints } from '../util/breakpoints';
+import { FadeIn } from './FadeAnimations';
 import { colors } from '../util/colors';
 
 const Container = styled.div`
@@ -11,8 +12,11 @@ const Container = styled.div`
     display: flex;
     align-items: flex-end;
     background-color: ${colors.black};
+
     img {
         width: 100%;
+        animation: ${FadeIn} 0.6s 0.7s ease forwards;
+        opacity: 0;
     }
 
     img.waves {

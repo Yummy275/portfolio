@@ -1,12 +1,13 @@
 import styled, { keyframes } from 'styled-components';
 import { colors } from '../util/colors';
 import { breakpoints } from '../util/breakpoints';
+import { FadeIn } from './FadeAnimations';
 
 export const Circle = styled.div`
     width: ${(props) => props.size};
     height: ${(props) => props.size};
     border-radius: 50%;
-    border: 8px solid ${colors.blue}6e;
+    border: 8px solid ${colors.white}6e;
     transition: all 0.3s ease-out;
     pointer-events: none;
 
@@ -72,7 +73,8 @@ const MorphingCircleMd = styled(Circle)`
 `;
 const MorphingCircleSm = styled(Circle)`
     animation: ${MorphingBlobSm} 25s ease-in-out infinite alternate;
-    background-color: ${colors.blue}6e;
+    background-color: ${colors.white}6e;
+    border: none;
 `;
 
 const MorphingCircleXl = styled(Circle)`
@@ -102,7 +104,8 @@ const Float = keyframes`
 
 export const InvertCircle = styled(Circle)`
     backdrop-filter: invert(1);
-    animation: ${Float} 2s ease infinite;
+    animation: ${Float} 2s ease infinite, ${FadeIn} 0.5s 0.5s linear forwards;
+    opacity: 0;
     border: none;
     z-index: 10 !important;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,

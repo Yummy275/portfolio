@@ -12,7 +12,7 @@ const bio = [
 ];
 
 const Container = styled.div`
-    margin-top: 160px;
+    margin-top: 250px;
     display: flex;
     align-items: flex-start;
     gap: 16px;
@@ -21,7 +21,7 @@ const Container = styled.div`
     .bio-info {
         .bio-text {
             padding: 10px;
-            margin-bottom: 60px;
+            margin-bottom: 100px;
 
             & > :first-child {
                 margin-bottom: 16px;
