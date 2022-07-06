@@ -18,6 +18,7 @@ const Container = styled.div`
         display: flex;
         flex-direction: column-reverse;
         gap: 16px;
+        min-height: 200px;
 
         @media (min-width: ${breakpoints.md}) {
             flex-direction: row;
@@ -91,7 +92,6 @@ const ContactBox = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPos = window.pageYOffset;
-            console.log(scrollPos);
             if (transformTrigger && scrollPos < 400) {
                 setTransformTrigger(false);
             }
@@ -99,6 +99,7 @@ const ContactBox = () => {
                 setTransformTrigger(true);
             }
         };
+
         window.addEventListener('scroll', handleScroll, { passive: true });
 
         return () => {
@@ -110,20 +111,22 @@ const ContactBox = () => {
         <Container>
             <div className="info-block">
                 <div className="box-content">
-                    <div className="contact-links">
-                        <ContactLink
-                            target="mailto:htgonzalez27@gmail.com"
-                            icon={email}
-                        />
-                        <ContactLink
-                            icon={linkedin}
-                            target="https://www.linkedin.com/in/humberto-gonzalez275/"
-                        />
-                    </div>
                     {transformTrigger ? (
-                        <div className="box-text" key="contact">
-                            {ContactMsg}
-                        </div>
+                        <>
+                            <div className="contact-links">
+                                <ContactLink
+                                    target="mailto:htgonzalez27@gmail.com"
+                                    icon={email}
+                                />
+                                <ContactLink
+                                    icon={linkedin}
+                                    target="https://www.linkedin.com/in/humberto-gonzalez275/"
+                                />
+                            </div>
+                            <div className="box-text" key="contact">
+                                {ContactMsg}
+                            </div>
+                        </>
                     ) : (
                         <div className="box-text" key="greet">
                             {GreetingMsg}

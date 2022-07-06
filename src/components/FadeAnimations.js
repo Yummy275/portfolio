@@ -20,4 +20,15 @@ export const FadeIn = keyframes`
     }
 `;
 
+export const FadeScaleIn = keyframes`
+    from {
+        transform: scale(.1) rotate(360deg);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) rotate(0);
+        opacity: 1;
+    }
+`;
+
 export default FadeShiftIn;

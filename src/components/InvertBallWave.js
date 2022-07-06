@@ -49,9 +49,9 @@ const InvertBallWave = () => {
             />
             <PositionedInvertCircle
                 className="invert-circle"
-                size="13rem"
-                sizemd="18rem"
-                sizelg="24rem"
+                size="200px"
+                sizemd="300px"
+                sizelg="400px"
             />
         </Container>
     );
