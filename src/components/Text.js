@@ -8,7 +8,7 @@ export const Title = styled.div`
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     & > * {
-        color: ${colors.blue};
+        color: ${colors.blue} !important;
         font-style: italic;
     }
 `;

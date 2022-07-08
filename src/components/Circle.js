@@ -7,7 +7,6 @@ export const Circle = styled.div`
     width: ${(props) => props.size};
     height: ${(props) => props.size};
     border-radius: 50%;
-    border: 8px solid ${colors.white}6e;
     transition: all 0.3s ease-out;
     pointer-events: none;
 
@@ -25,22 +24,9 @@ export const Circle = styled.div`
     }
 `;
 
-const Float = keyframes`
-  from {
-    transform: rotate(0deg) translate3d(10px, 0, 0) rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg) translate3d(10px, 0, 0) rotate(-360deg);
-  }
-`;
-
 export const InvertCircle = styled(Circle)`
     backdrop-filter: invert(1);
-    animation: ${Float} 2s ease infinite, ${FadeIn} 0.5s 0.5s linear forwards;
-    opacity: 0;
     border: none;
-    z-index: 10 !important;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
         rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
         rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,

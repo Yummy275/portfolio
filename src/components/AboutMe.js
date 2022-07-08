@@ -5,9 +5,10 @@ import headshot from '../images/headshot.jpg';
 import TechInfo from './TechInfo';
 import { breakpoints } from '../util/breakpoints';
 import { Title } from './Text';
+import BouncyHoverLetters from './BouncyHoverLetters';
 
 const bio = [
-    "I'm a self taught developer looking to work on web projects. With a passion for elegant design and clean maintainable code, I hope to help push you towards your goals. ",
+    "I'm a self taught developer looking to work on some web projects. With a passion for elegant design and clean maintainable code, I hope to help push you towards your goals. ",
     "Whether you're looking for a new website, an update, or looking for your next dedicated web developer; I'm ready to help!",
 ];
 
@@ -20,17 +21,19 @@ const Container = styled.div`
 
     .bio-info {
         .bio-text {
+            font-size: 1.1rem;
             padding: 10px;
             margin-bottom: 100px;
 
             & > :first-child {
-                margin-bottom: 16px;
+                margin-bottom: 50px;
             }
         }
     }
 
     img {
-        border-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 
     @media (min-width: ${breakpoints.md}) {
@@ -57,7 +60,8 @@ const Container = styled.div`
         }
 
         img.headshot {
-            width: 200px;
+            width: 240px;
+            margin-bottom: 50px;
             @media (min-width: ${breakpoints.md}) {
                 display: none;
             }
@@ -75,14 +79,18 @@ const AboutMe = () => {
         <Container className="info-block">
             <div className="bio-info">
                 <Title>
-                    <h2>Who am I?</h2>
+                    <h2>
+                        <BouncyHoverLetters word="About me" />
+                    </h2>
                 </Title>
                 <div className="bio-text">
                     <p>{bio[0]}</p>
                     <p>{bio[1]}</p>
                 </div>
                 <Title>
-                    <h2>Tech</h2>
+                    <h2>
+                        <BouncyHoverLetters word="Tech" />
+                    </h2>
                 </Title>
                 <TechInfo />
             </div>

@@ -15,7 +15,7 @@ const Container = styled.div`
 
     :hover {
         transform: translate(8px, -8px);
-        background-color: ${colors.black};
+        background-color: ${colors.blue};
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 

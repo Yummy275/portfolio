@@ -27,6 +27,8 @@ const Container = styled.div`
 
     .info-content {
         .gradient-bg {
+            margin-top: 100px;
+            padding-bottom: 100px;
             background-image: linear-gradient(
                 to bottom,
                 #114669,

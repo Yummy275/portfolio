@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { ProjectCard } from './ProjectCard';
 import { Title } from './Text';
-import { colors } from '../util/colors';
+import BouncyHoverLetters from './BouncyHoverLetters';
 
 const Container = styled.div`
     .projects-content {
@@ -24,7 +24,9 @@ const Projects = () => {
         <Container className="info-block">
             <div className="projects-content">
                 <Title>
-                    <h2>Projects</h2>
+                    <h2>
+                        <BouncyHoverLetters word="Projects" />
+                    </h2>
                 </Title>
                 <div className="projects-container">
                     <ProjectCard

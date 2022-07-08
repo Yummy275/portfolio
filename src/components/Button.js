@@ -8,6 +8,7 @@ export const Button = styled.button`
     padding: 8px;
     font-size: 0.8rem;
     transition: all 0.2s ease;
+    color: ${colors.white};
 
     :hover {
         cursor: pointer;

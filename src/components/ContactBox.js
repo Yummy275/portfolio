@@ -46,7 +46,6 @@ const Container = styled.div`
             align-items: center;
             justify-content: center;
             gap: 16px;
-            transition: all 5s ease;
 
             @media (min-width: ${breakpoints.md}) {
                 flex-direction: column;

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import waveGradientVertical from '../images/wavesGradientVertical.svg';
 import waveGradient from '../images/wavesGradient.svg';
 import { InvertCircle } from './Circle';
@@ -32,11 +32,24 @@ const Container = styled.div`
     }
 `;
 
+const Float = keyframes`
+  from {
+    transform: rotate(0deg) translate3d(10px, 0, 0) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate3d(10px, 0, 0) rotate(-360deg);
+  }
+`;
+
 const PositionedInvertCircle = styled(InvertCircle)`
     position: absolute;
     bottom: 0;
     margin-bottom: 32px;
     margin-left: 10vw;
+    animation: ${Float} 2s ease infinite, ${FadeIn} 0.5s 0.4s linear forwards;
+    opacity: 0;
+    z-index: 10 !important;
     @media (min-width: ${breakpoints.lg}) {
         margin-left: 20vw;
     }

@@ -7,12 +7,12 @@ export const GlobalStyles = createGlobalStyle`
       margin: 0;
       padding: 0;
       font-family: 'Lato', sans-serif;
-      color: ${colors.white};
   }
   
   html {
     background-color: ${colors.blue};
-    font-size: 130%;
+    font-size: 130%;      
+    color: ${colors.white};
   } 
 
   .info-block {

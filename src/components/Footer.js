@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import blobAni from '../images/blobanimation.svg';
 import { breakpoints } from '../util/breakpoints';
+import BouncyHoverLetters from './BouncyHoverLetters';
 
 const Container = styled.div`
     height: 100vh;
@@ -38,10 +39,11 @@ const Footer = () => {
             <div className="info-block">
                 <img src={blobAni} alt="blob-animation" />
                 <div className="message">
-                    <h2>Thank you for visiting!</h2>
+                    <h2>
+                        <BouncyHoverLetters word="Thanks for visiting." />
+                    </h2>
                     <h3 className="farewell-msg">
-                        I typically respond within a day so reach out and let's
-                        get to work.
+                        <BouncyHoverLetters word="Let's get to work!" />
                     </h3>
                 </div>
             </div>

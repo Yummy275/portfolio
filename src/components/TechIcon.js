@@ -6,11 +6,14 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 10px;
-
     img {
         width: 70px;
         height: 70px;
         border-radius: 5px;
+        transition: transform 0.2s ease;
+        :hover {
+            transform: scale(1.2);
+        }
     }
 
     .tech-label {
