@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.3eee7725.js",
+    "static/media/longshot.jpg": "/portfolio/static/media/longshot.81335868fe5b654de39f.jpg",
+    "static/media/headshot.jpg": "/portfolio/static/media/headshot.4da32e3b1ed2231bd82c.jpg",
+    "static/media/nodejs.png": "/portfolio/static/media/nodejs.0b1d54491ba77a74fb9c.png",
+    "static/media/email.png": "/portfolio/static/media/email.21306aca2b2f0dcc11c5.png",
+    "static/media/bootstrap.png": "/portfolio/static/media/bootstrap.67298970ca31f54058a0.png",
+    "static/media/mon.png": "/portfolio/static/media/mon.8d910588cae4859bb961.png",
+    "static/media/python.png": "/portfolio/static/media/python.82ab0bdb7e21c02fbe36.png",
+    "static/media/react.png": "/portfolio/static/media/react.f02dc154ee8a8403714e.png",
+    "static/media/unity.png": "/portfolio/static/media/unity.4a1eb5c1a3428ba850e4.png",
+    "static/media/linkedin.png": "/portfolio/static/media/linkedin.68ac41e1459436bfd38f.png",
+    "static/media/blobanimation.svg": "/portfolio/static/media/blobanimation.0950a6ce00ef0db9dd4bbdc0afc80752.svg",
+    "static/media/wavesGradientVertical.svg": "/portfolio/static/media/wavesGradientVertical.ed87e317d4c4bf23f375982150a0f0b1.svg",
+    "static/media/wavesGradient.svg": "/portfolio/static/media/wavesGradient.2748ac2c199d4924d71e9db94d47bff6.svg",
+    "index.html": "/portfolio/index.html",
+    "main.3eee7725.js.map": "/portfolio/static/js/main.3eee7725.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.3eee7725.js"
+  ]
+}
