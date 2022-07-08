@@ -4,6 +4,7 @@ import InvertBallWave from './components/InvertBallWave';
 import ContactBox from './components/ContactBox';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 import { breakpoints } from './util/breakpoints';
 
 const Container = styled.div`
@@ -23,6 +24,19 @@ const Container = styled.div`
             }
         }
     }
+
+    .info-content {
+        .gradient-bg {
+            background-image: linear-gradient(
+                to bottom,
+                #114669,
+                #183f5b,
+                #1b374e,
+                #1d3041,
+                #1d2935
+            );
+        }
+    }
 `;
 
 function App() {
@@ -32,8 +46,11 @@ function App() {
             <ContactBox />
             <div className="info-content">
                 <InvertBallWave />
-                <AboutMe />
-                <Projects />
+                <div className="gradient-bg">
+                    <AboutMe />
+                    <Projects />
+                </div>
+                <Footer />
             </div>
         </Container>
     );
